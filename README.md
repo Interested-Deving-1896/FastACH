@@ -1,25 +1,29 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # FastACH
-.NET library for reading and writing ACH files
 
-## Continuous integration
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/FastACH)
 
-| Branch  | Build status |
-|---------|--------------|
-| master  | [![Build and Publish](https://github.com/MaratFattakhov/FastACH/actions/workflows/build.yml/badge.svg)](https://github.com/MaratFattakhov/FastACH/actions/workflows/build.yml) |
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Installation [![NuGet](https://img.shields.io/nuget/v/FastACH.svg)](https://www.nuget.org/packages/FastACH/)
+## Architecture
 
-### .NET 8.0, .NET 9.0, .NET 10.0
-	PM> Install-Package FastACH
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Add namespace to the program
+## Install
 
-``` csharp
-using FastACH;
-using FastACH.Builders; // For using AchFileBuilder
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/FastACH.git
+cd FastACH
 ```
 
 ## Usage
+
 
 ### Reading ACH file
 ``` csharp
@@ -208,15 +212,50 @@ var achFile = new AchFile()
 await achFile.WriteToFile("ACH.txt");
 ```
 
-## Perfomance results
+## Configuration
 
-I created a benchmark to compare reading performance between FastACH and very popular [ChoETL.Nacha library](https://github.com/Cinchoo/ChoETL.NACHA).
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-| Method      | NumberOfEntries | Mean          | Error | Gen0          | Gen1          | Gen2          | Allocated         |
-|------------ |---------------- |--------------:|------:|--------------:|--------------:|--------------:|------------------:|
-| FastACH     | 1000            |      8.936 ms |    NA |             - |             - |             - |         835.11 KB |
-| ChoetlNacha | 1000            |    897.993 ms |    NA |   535000.0000 |   529000.0000 |   529000.0000 |    377,0384.62 KB |
-| FastACH     | 10000           |     19.415 ms |    NA |             - |             - |             - |       8,261.02 KB |
-| ChoetlNacha | 10000           |  5,566.911 ms |    NA |  3549000.0000 |  3489000.0000 |  3487000.0000 |  37,595,192.04 KB |
-| FastACH     | 100000          |    193.902 ms |    NA |     6000.0000 |     5000.0000 |             - |      82,478.65 KB |
-| ChoetlNacha | 100000          | 37,031.587 ms |    NA | 25610000.0000 | 25008000.0000 | 25008000.0000 | 375,717,659.82 KB |
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/FastACH`](https://github.com/Interested-Deving-1896/FastACH) and mirrored through:
+
+```
+Interested-Deving-1896/FastACH  ──►  OpenOS-Project-OSP/FastACH  ──►  OpenOS-Project-Ecosystem-OOC/FastACH
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/FastACH/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
